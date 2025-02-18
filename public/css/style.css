@@ -1,0 +1,148 @@
+:root {
+    --width-main: 40%;
+    --text-main: hsl(0, 0%, 90%);
+    --text-sec: hsl(0, 0%, 30%);
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(0, 0%, 10%);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto Condensed", serif;
+}
+h1,
+h2,
+p {
+    margin: 0px;
+}
+p {
+    font-size: large;
+}
+a {
+    all: unset;
+    border-bottom: 1px solid var(--text-sec);
+    transition: all 0.2s ease-in;
+}
+a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--text-main);
+}
+
+footer {
+    width: 100%;
+    border-top: 2px solid var(--text-sec);
+    padding: 1rem 0rem;
+}
+
+.header {
+    width: var(--width-main);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--text-sec);
+    padding: 1rem 0rem;
+    margin-bottom: 3rem;
+}
+.header h1 {
+    all: unset;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+.nav a {
+    all: unset;
+    font-size: larger;
+}
+.nav a:hover,
+.header a:hover {
+    cursor: pointer;
+}
+
+#content-wrapper {
+    width: var(--width-main);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img-profile-wrapper {
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.img-profile {
+    width: 100%;
+    object-fit: cover;
+}
+.img-profile-wrapper:hover {
+    //rotate: 360deg;
+}
+
+.dual-col-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col {
+    //width: 100%;
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    gap: 2rem;
+}
+
+.link {
+    font-size: larger;
+}
+
+.skill-wrapper {
+    width: 50%;
+    justify-content: start;
+    gap: 0.6rem;
+}
+.skill-col {
+    font-weight: bold;
+    gap: 0.2rem;
+}
+.skill-progress {
+    width: 100%;
+    height: 12px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--text-sec);
+}
+.skill-progress::-webkit-progress-bar {
+    background-color: var(--text-sec);
+    border-radius: 16px;
+}
+.skill-progress::-webkit-progress-value {
+    background-color: var(--text-sec);
+    border-radius: 16px;
+}
+.skill-progress::-moz-progress-bar {
+    background-color: var(--text-main);
+}
