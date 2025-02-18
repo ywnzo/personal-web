@@ -20,6 +20,7 @@ body {
 }
 h1,
 h2,
+h3,
 p {
     margin: 0px;
 }
@@ -123,6 +124,12 @@ footer {
     width: 50%;
     justify-content: start;
     gap: 0.6rem;
+}
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 .skill-col {
     font-weight: bold;
