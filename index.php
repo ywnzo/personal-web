@@ -19,7 +19,7 @@
             </div>
 
             <div class="row">
-                <a class="link" href="https://github.com/v01d10" target="_blank"> <i class="fa-brands fa-github"></i> Github</a>
+                <a class="link" href="https://github.com/ywnzo" target="_blank"> <i class="fa-brands fa-github"></i> Github</a>
                 <a class="link" href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"></i> Twitter</a>
                 <a class="link" href="https://linkedin.com/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
             </div>
