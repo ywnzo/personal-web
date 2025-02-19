@@ -139,10 +139,6 @@
                 <progress class="skill-progress" value="5" max="10"></progress>
             </div>
             <div class="col skill-col">
-                <label for="progress">Godot Game Engine</label>
-                <progress class="skill-progress" value="8" max="10"></progress>
-            </div>
-            <div class="col skill-col">
                 <label for="progress">Linux</label>
                 <progress class="skill-progress" value="5" max="10"></progress>
             </div>
@@ -153,6 +149,10 @@
             <div class="col skill-col">
                 <label for="progress">Unity Game Engine</label>
                 <progress class="skill-progress" value="6" max="10"></progress>
+            </div>
+            <div class="col skill-col">
+                <label for="progress">Godot Game Engine</label>
+                <progress class="skill-progress" value="8" max="10"></progress>
             </div>
         </div>
         <div class="col skill-col" style="margin-top: -2rem;">
