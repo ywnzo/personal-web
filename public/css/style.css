@@ -1,12 +1,14 @@
 :root {
     @media only screen and (max-width: 600px) {
-        --width-main: 90%;
+        --width-main: 80%;
+        --dual-col-row-dir: column;
     }
     @media only screen and (min-width: 600px) {
         --width-main: 70%;
     }
     @media only screen and (min-width: 992px) {
-        --width-main: 50%;
+        --width-main: 60%;
+        --dual-col-row-dir: row;
     }
     @media only screen and (min-width: 1200px) {
         --width-main: 40%;
@@ -92,8 +94,9 @@ footer {
 }
 
 .img-profile-wrapper {
-    width: 16rem;
-    height: 16rem;
+    width: fit-content;
+    height: fit-content;
+    aspect-ratio: 4/4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,13 +115,13 @@ footer {
 .dual-col-row {
     width: 100%;
     display: flex;
+    flex-direction: var(--dual-col-row-dir);
     justify-content: space-around;
     align-items: center;
 }
 
 .col {
-    //width: 100%;
-    //height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -152,13 +155,14 @@ footer {
     border-radius: 16px;
     border: none;
     background-color: var(--text-sec);
+    accent-color: var(--text-main);
 }
 .skill-progress::-webkit-progress-bar {
     background-color: var(--text-sec);
     border-radius: 16px;
 }
 .skill-progress::-webkit-progress-value {
-    background-color: var(--text-sec);
+    background-color: var(--text-main);
     border-radius: 16px;
 }
 .skill-progress::-moz-progress-bar {
