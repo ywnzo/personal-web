@@ -51,37 +51,37 @@ a:hover {
 }
 
 footer {
-    width: 100%;
+    width: var(--width-main);
     border-top: 2px solid var(--text-sec);
     padding: 1rem 0rem;
 }
 
-.header {
+header {
     width: var(--width-main);
     display: flex;
     align-items: end;
     justify-content: space-between;
     border-bottom: 2px solid var(--text-sec);
     padding: 1rem 0rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
-.header h1 {
+header h1 {
     all: unset;
     font-size: xx-large;
     font-weight: bold;
 }
-.nav {
+nav {
     height: 100%;
     display: flex;
     align-items: end;
     gap: 1rem;
 }
-.nav a {
+nav a {
     all: unset;
     font-size: larger;
 }
-.nav a:hover,
-.header a:hover {
+nav a:hover,
+header a:hover {
     cursor: pointer;
 }
 
@@ -129,6 +129,9 @@ footer {
     display: flex;
     gap: 2rem;
 }
+.space-between {
+  justify-content: space-between;
+}
 
 .link {
     font-size: larger;
@@ -167,4 +170,12 @@ footer {
 }
 .skill-progress::-moz-progress-bar {
     background-color: var(--text-main);
+}
+
+.project-card {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--text-sec);
+}
+.project-card:last-of-type {
+  border-bottom: none;
 }
